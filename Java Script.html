@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+</head>
+<body>
+<button onclick="document.getElementById('demo').innerHTML=Date()">Jam Berapa Sekarang?</button>
+<p id="demo">Demo</p>
+
+<button onclick="this.innerHTML=Date()">Jam Berapa Sekarang?</button>
+
+<select id="hobi" onchange="myFunctionHobi()">
+    <option value="HobiRenang">Renang</option>
+    <option value="HobiMomotoran">Momotoran</option>
+</select>
+<p id="texthobi">Hasil Hobi</p>
+</body>
+
+<script language="javascript">
+    alert("Hallo Oktan");
+    function myFunctionHobi(){
+        var x = document.getElementById("hobi").value;
+        document.getElementById("texthobi").innerHTML = "Anda Memilih : " + x; 
+    }
+    // document.write("HAI GUYS DISINI SAYA INGIN MEMBUAT KONTOL <br>");
+    // document.write("HAHA MEMEK");
+</script>
+</html>
